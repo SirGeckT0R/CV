@@ -1,7 +1,10 @@
 import BorderedFlexElement from './components/BorderedFlexElement';
 import Card from './components/Card';
 import TextWithColor from './components/TextWithColor';
-import { FaTelegram } from 'react-icons/fa';
+import { FaTelegram, FaGithub } from 'react-icons/fa';
+import CustomImage from './components/CustomImage';
+import ProjectName from './components/ProjectName';
+import TextBlock from './components/TextBlock';
 
 function App() {
   return (
@@ -19,26 +22,13 @@ function App() {
       </Card>
       <Card>
         <BorderedFlexElement>
-          <div className='flex flex-row'>
-            <div className='flex flex-col'>
+          <div className='flex md:flex-row flex-col justify-center gap-8'>
+            <div className='flex flex-col justify-center items-center mx-auto gap-8 w-3/4'>
               <a href='https://telegram.me/flying_rastaman'>
-                <FaTelegram className='fill-blue-400' size='5rem' />
+                <FaTelegram className='fill-blue-400' size='4rem' />
               </a>
-              <a href=''>
-                <img
-                  src='./img/GH_icon.png'
-                  alt='GitHub'
-                  width='46px'
-                  height='50px'
-                />
-              </a>
-              <a href=''>
-                <img
-                  src='./img/VK_icon.png'
-                  alt='Vkontakte'
-                  width='46px'
-                  height='50px'
-                />
+              <a href='https://github.com/SirGeckT0R'>
+                <FaGithub className='fill-blue-400' size='4rem' />
               </a>
             </div>
             <img
@@ -47,21 +37,82 @@ function App() {
               height='128px'
               alt='Anton Logvinenko'
               title='Anton Logvinenko'
-              className='rounded-lg shadow-blue-400 shadow-md md:w-2/4 w-3/4 ml-auto mr-10 inline-block'
+              className='rounded-lg shadow-blue-400 shadow-md md:w-2/4 w-10/12 mx-auto ml-auto mr-10'
             />
           </div>
         </BorderedFlexElement>
-        <p className='w-3/6 md:text-2xl text-sm md:px-10 px-5'>
+        <TextBlock className='w-3/6'>
           I am a 2nd course student of Belarusian State University of Faculty of
-          Mechanics and Mathematics for web-developer/mathematician. I have
+          Mechanics and Mathematics for web-developer and mathematician. I have
           khowledge of such programming languages as{' '}
           <TextWithColor>C++, C, Bash, Transact SQL, JavaScript</TextWithColor>{' '}
           and its library <TextWithColor>React</TextWithColor>. Worked in
           applications like Figma, Adobe Illustrator. Studied Web Design,
           Operational Systems and Networks. My English level is B2.
-        </p>
+        </TextBlock>
       </Card>
-      <Card></Card>
+
+      <Card>
+        <BorderedFlexElement>
+          <CustomImage alter='Todo' img='./img/todo.png' />
+        </BorderedFlexElement>
+        <div className='flex flex-col  w-3/6'>
+          <TextWithColor>
+            <ProjectName>TODO</ProjectName>
+          </TextWithColor>
+          <TextBlock className='border-b-2 border-zinc-600 pb-3 '>
+            Technology: <TextWithColor>React</TextWithColor>
+          </TextBlock>
+          <TextBlock className='pt-2'>
+            Web-Application for creating ToDo lists. Has options of checking,
+            deleting and adding new todos.
+          </TextBlock>
+        </div>
+      </Card>
+
+      <Card>
+        <BorderedFlexElement>
+          <CustomImage alter='Expanded ToDo list' img='./img/users.gif' />
+        </BorderedFlexElement>
+        <div className='flex flex-col w-3/6'>
+          <TextWithColor>
+            <ProjectName> TODO WITH AUTHENTICATION</ProjectName>
+          </TextWithColor>
+          <TextBlock className='border-b-2 border-zinc-600 pb-3'>
+            Technology:{' '}
+            <TextWithColor>
+              React, React JSON-server, React Router
+            </TextWithColor>
+          </TextBlock>
+
+          <TextBlock className='pt-2'>
+            Multiple users Web-Application for ToDo lists. Provides
+            registration, loging in, management of todos, provides privacy.
+          </TextBlock>
+        </div>
+      </Card>
+      <Card>
+        <BorderedFlexElement>
+          <CustomImage alter='API & SPA' img='./img/redux.gif' />
+        </BorderedFlexElement>
+        <div className='flex flex-col w-3/6'>
+          <TextWithColor>
+            <ProjectName>API & SPA</ProjectName>
+          </TextWithColor>
+          <TextBlock className='border-b-2 border-zinc-600 pb-3 '>
+            Technology:{' '}
+            <TextWithColor>React, React Redux, React Router</TextWithColor>
+          </TextBlock>
+          <TextBlock className='pt-2'>
+            Web-Application for data vizualization from{' '}
+            <a
+              href='https://jsonplaceholder.typicode.com/.'
+              className='underline decoration-blue-400  '>
+              <TextWithColor>API</TextWithColor>
+            </a>
+          </TextBlock>
+        </div>
+      </Card>
     </div>
   );
 }

@@ -12,6 +12,16 @@ code {
     monospace;
 }
 
+.iconsSize {
+  size: 5rem;
+}
+
+@media (max-width: 768px) {
+  .iconsSize {
+    size: 2rem;
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
