@@ -24,7 +24,7 @@ function App() {
       <Card>
         <BorderedFlexElement>
           <div className='flex md:flex-row flex-col justify-center gap-8'>
-            <div className='flex flex-col justify-center items-center mx-auto gap-8 w-3/4'>
+            <div className='flex md:flex-col flex-row justify-center items-center mx-auto gap-8 '>
               <a href='https://telegram.me/flying_rastaman'>
                 <FaTelegram className='fill-blue-400' size='4rem' />
               </a>
@@ -42,7 +42,7 @@ function App() {
             />
           </div>
         </BorderedFlexElement>
-        <TextBlock className='w-3/6'>
+        <TextBlock className='md:w-3/6 w-full mt-4'>
           I am a 2nd course student of Belarusian State University of Faculty of
           Mechanics and Mathematics for web-developer and mathematician. I have
           khowledge of such programming languages as{' '}
@@ -57,7 +57,7 @@ function App() {
         <BorderedFlexElement>
           <CustomImage alter='Todo' img='./img/todo.png' />
         </BorderedFlexElement>
-        <div className='flex flex-col  w-3/6'>
+        <div className='flex flex-col  md:w-3/6 w-full'>
           <TextWithColor>
             <ProjectName>TODO</ProjectName>
           </TextWithColor>
@@ -82,7 +82,7 @@ function App() {
         <BorderedFlexElement>
           <CustomImage alter='Expanded ToDo list' img='./img/users.gif' />
         </BorderedFlexElement>
-        <div className='flex flex-col w-3/6'>
+        <div className='flex flex-col md:w-3/6 w-full'>
           <TextWithColor>
             <ProjectName> TODO WITH AUTHENTICATION</ProjectName>
           </TextWithColor>
@@ -110,7 +110,7 @@ function App() {
         <BorderedFlexElement>
           <CustomImage alter='API & SPA' img='./img/redux.gif' />
         </BorderedFlexElement>
-        <div className='flex flex-col w-3/6'>
+        <div className='flex flex-col md:w-3/6 w-full'>
           <TextWithColor>
             <ProjectName>API & SPA</ProjectName>
           </TextWithColor>
