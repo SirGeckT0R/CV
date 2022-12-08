@@ -5,6 +5,7 @@ import { FaTelegram, FaGithub } from 'react-icons/fa';
 import CustomImage from './components/CustomImage';
 import ProjectName from './components/ProjectName';
 import TextBlock from './components/TextBlock';
+import GitHub from './components/GitHub';
 
 function App() {
   return (
@@ -67,6 +68,13 @@ function App() {
             Web-Application for creating ToDo lists. Has options of checking,
             deleting and adding new todos.
           </TextBlock>
+          <TextBlock className='underline decoration-blue-400  '>
+            <TextWithColor>
+              <a href='https://github.com/SirGeckT0R/Todo'>
+                <GitHub />
+              </a>
+            </TextWithColor>
+          </TextBlock>
         </div>
       </Card>
 
@@ -89,6 +97,13 @@ function App() {
             Multiple users Web-Application for ToDo lists. Provides
             registration, loging in, management of todos, provides privacy.
           </TextBlock>
+          <TextBlock className='underline decoration-blue-400  '>
+            <TextWithColor>
+              <a href='https://github.com/SirGeckT0R/WebAuthentication'>
+                <GitHub />
+              </a>
+            </TextWithColor>
+          </TextBlock>
         </div>
       </Card>
       <Card>
@@ -110,6 +125,13 @@ function App() {
               className='underline decoration-blue-400  '>
               <TextWithColor>API</TextWithColor>
             </a>
+          </TextBlock>
+          <TextBlock className='underline decoration-blue-400  '>
+            <TextWithColor>
+              <a href='https://github.com/SirGeckT0R/WebRouterRedux'>
+                <GitHub />
+              </a>
+            </TextWithColor>
           </TextBlock>
         </div>
       </Card>
