@@ -21,6 +21,13 @@ function App() {
           Web-developer
         </div>
       </Card>
+
+      <Card>
+        <TextWithColor>
+          <h2 className='md:text-3xl text-md'>MAIN SKILLS:</h2>
+        </TextWithColor>
+        <p className='md:text-3xl text-base md:pl-5'>React, JavaScript, C++</p>
+      </Card>
       <Card>
         <BorderedFlexElement>
           <div className='flex md:flex-row flex-col justify-center gap-8'>
@@ -55,31 +62,6 @@ function App() {
 
       <Card>
         <BorderedFlexElement>
-          <CustomImage alter='Todo' img='./img/todo.png' />
-        </BorderedFlexElement>
-        <div className='flex flex-col  md:w-3/6 w-full'>
-          <TextWithColor>
-            <ProjectName>TODO</ProjectName>
-          </TextWithColor>
-          <TextBlock className='border-b-2 border-zinc-600 pb-3 '>
-            Technology: <TextWithColor>React</TextWithColor>
-          </TextBlock>
-          <TextBlock className='pt-2'>
-            Web-Application for creating ToDo lists. Has options of checking,
-            deleting and adding new todos.
-          </TextBlock>
-          <TextBlock className='underline decoration-blue-400  '>
-            <TextWithColor>
-              <a href='https://github.com/SirGeckT0R/Todo'>
-                <GitHub />
-              </a>
-            </TextWithColor>
-          </TextBlock>
-        </div>
-      </Card>
-
-      <Card>
-        <BorderedFlexElement>
           <CustomImage alter='Expanded ToDo list' img='./img/users.gif' />
         </BorderedFlexElement>
         <div className='flex flex-col md:w-3/6 w-full'>
@@ -106,6 +88,7 @@ function App() {
           </TextBlock>
         </div>
       </Card>
+
       <Card>
         <BorderedFlexElement>
           <CustomImage alter='API & SPA' img='./img/redux.gif' />
@@ -129,6 +112,31 @@ function App() {
           <TextBlock className='underline decoration-blue-400  '>
             <TextWithColor>
               <a href='https://github.com/SirGeckT0R/WebRouterRedux'>
+                <GitHub />
+              </a>
+            </TextWithColor>
+          </TextBlock>
+        </div>
+      </Card>
+
+      <Card>
+        <BorderedFlexElement>
+          <CustomImage alter='Todo' img='./img/todo.png' />
+        </BorderedFlexElement>
+        <div className='flex flex-col  md:w-3/6 w-full'>
+          <TextWithColor>
+            <ProjectName>TODO</ProjectName>
+          </TextWithColor>
+          <TextBlock className='border-b-2 border-zinc-600 pb-3 '>
+            Technology: <TextWithColor>React</TextWithColor>
+          </TextBlock>
+          <TextBlock className='pt-2'>
+            Web-Application for creating ToDo lists. Has options of checking,
+            deleting and adding new todos.
+          </TextBlock>
+          <TextBlock className='underline decoration-blue-400  '>
+            <TextWithColor>
+              <a href='https://github.com/SirGeckT0R/Todo'>
                 <GitHub />
               </a>
             </TextWithColor>
