@@ -32,7 +32,7 @@ function App() {
         <BorderedFlexElement>
           <div className='flex md:flex-row flex-col justify-center gap-8'>
             <div className='flex md:flex-col flex-row justify-center items-center mx-auto gap-8 '>
-              <a href='https://telegram.me/flying_rastaman'>
+              <a href='https://telegram.me/sir_gecktor'>
                 <FaTelegram className='fill-blue-400' size='4rem' />
               </a>
               <a href='https://github.com/SirGeckT0R'>
@@ -50,10 +50,10 @@ function App() {
           </div>
         </BorderedFlexElement>
         <TextBlock className='md:w-3/6 w-full mt-4'>
-          I am a 2nd course student of Belarusian State University of Faculty of
+          I am a 4th course student of Belarusian State University of Faculty of
           Mechanics and Mathematics for web-developer and mathematician. I have
           khowledge of such programming languages as{' '}
-          <TextWithColor>C++, C, Bash, Transact SQL, JavaScript</TextWithColor>{' '}
+          <TextWithColor>C++, C#, Java, Transact SQL, JavaScript</TextWithColor>{' '}
           and its library <TextWithColor>React</TextWithColor>. Worked in
           applications like Figma, Adobe Illustrator. Studied Web Design,
           Operational Systems and Networks. My English level is B2.
